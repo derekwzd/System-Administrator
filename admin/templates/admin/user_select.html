@@ -1,0 +1,5 @@
+<form action="." method="POST">{% csrf_token %}
+	<input type="text" name="username" />
+	<input type="submit" name="select" value="submit" />
+	{{ message }}
+</form>

@@ -1,0 +1,21 @@
+<html>
+<title>hehe</title>
+<body>
+		<form action="." method="POST">{% csrf_token %}
+    		<div>username: <input type="text" name="username"/></div>
+    		<div>password: <input type="password" name="password"/></div>
+    		<div>name: <input type="text" name="name"/></div>
+			<div>gender:
+				<select name="gender" >
+                    <option value="M">male</option>
+                    <option value="F">female</option>
+                </select>
+			</div>
+			<div>E-mail: <input type="text" name="email"/></div>
+			<div>ID: <input type="text" name="id_card"/></div>
+			<div>note: <br/><textarea rows="10" cols="30" name="note"></textarea></div>
+			<div><input type="submit" name="submit" value="submit"/></div>
+            <p>{{ message }}</p>
+    	</form>
+</body>
+</html>
